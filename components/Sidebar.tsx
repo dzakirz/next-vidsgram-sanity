@@ -6,7 +6,7 @@ import { GoogleLogin } from "react-google-login"
 import { AiFillHome, AiOutlineMenu } from "react-icons/ai"
 import { ImCancelCircle } from "react-icons/im"
 
-const Sidebar = () => {
+const Sidebar: NextPage = () => {
     const [showSidebar, setShowSidebar] = useState(true)
     const userProfile = false
 
@@ -22,7 +22,7 @@ const Sidebar = () => {
                 {showSidebar ? <ImCancelCircle /> : <AiOutlineMenu />}
             </div>
             {showSidebar && (
-                <div className="xl:w-400 w-20 flex flex-col justify-start mb-10 border-r-2 border-gray-100 xl:border-0 p-3">
+                <div className="xl:w-[400px] w-20 flex flex-col justify-start mb-10 border-r-2 border-gray-100 xl:border-0 p-3">
                     <div className="xl:border-b-2 border-gray-200 xl:pb-4">
                         <Link href="/">
                             <div className={normalLink}>
@@ -45,7 +45,7 @@ const Sidebar = () => {
                                     clientId=""
                                     render={(renderProps) => (
                                         <button
-                                            className="bg-white text-lg text-[#F51997] border-[1px] border-[#F51997]"
+                                            className="bg-white text-lg text-[#F51997] border-[1px] border-[#F51997] font-semibold px-6 py-3 rounded-md outline-none w-full mt-3 hover:text-white hover:bg-[#F51997]"
                                             onClick={renderProps.onClick}
                                             disabled={renderProps.disabled}
                                         >
