@@ -1,7 +1,7 @@
 import React from "react"
 
-const SugestedAccounts = () => {
+const SuggestedAccounts = () => {
     return <div>SugestedAccounts</div>
 }
 
-export default SugestedAccounts
+export default SuggestedAccounts
